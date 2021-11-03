@@ -1,9 +1,9 @@
 const net = require('net');
-const port = 14740;
+const port = 8009;
 
 const configObj = {
   port: port,
-  host: '4.tcp.ngrok.io'
+  host: 'localhost'
 };
 
 const client = net.createConnection(configObj);
@@ -12,12 +12,8 @@ client.on('connect',function(){
   console.log('client is connected to server.');
 });
 
-client.on('data', function(message){ // this is how we receive
+client.on('data', function(message){
   console.log(`Server says: ${message}`);
-});
-
-process.stdin.on('data', function(message){ // this is how we send
-  client.write(message);
 });
 
 client.on('end', function(){

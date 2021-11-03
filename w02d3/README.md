@@ -6,9 +6,9 @@ Welcome to Week 2 Day 3 !!! Today we will be
 talking about Networking and TCP ( with a touch 
 of HTTP)
 
-[x] TCP breaking a message into parts, each of which pushes
+[ ] TCP breaking a message into parts, each of which pushes
 its way throughout the network by whatever route it can find.
-[x] HTTP Parts of a URL: protocol, domain, port, path, query, anchor
+[ ] HTTP Parts of a URL: protocol, domain, port, path, query, anchor
 
 ## Networking
 

@@ -5,11 +5,9 @@ const server = net.createServer(); // factory function
 
 const connectClients = [];
 
-const broadcast = function(message, from){
+const broadcast = function(message){
   for (let destination of connectClients){
-    if (destination !== from) {
-      destination.write(message);
-    }
+    destination.write(message);
   }
 };
 

@@ -1,0 +1,106 @@
+nally:/w02d3] node client.js 
+client is connected to server.
+Server says: Welcome to my awesome ⛵ server!
+Server says: hey!
+
+Server says: alec here
+
+Server says: hi
+
+Server says: karolina!
+
+Server says: yooooooo
+
+Server says: hellooooo
+
+Server says: hello!!
+
+Server says: yoooooooo
+
+Server says: Abdul Here
+
+Server says: hi
+
+Server says: kyle here
+
+Server says: sailboats are cool
+
+Server says: HellooooOO....
+
+Server says: this is sweg
+
+Server says: Mehelloo Mei here =)
+
+Server says: jirjgogjerjgjgrgj
+
+Server says: pasd
+
+Server says: 🥞🧇🍔🥞
+
+Server says: hello
+
+Server says: rtyrtyeryrtyrtyrtyrtyrthtyjdgfhgughfgihhuigfghifjgfuighfghuifgh
+
+Server says: W
+
+Server says: WOW the saisailor man
+
+Server says: Moj is here
+
+Server says: tony stark tony stark is in the house
+
+Server says: this is awsome
+
+Server says: coool
+
+Server says: yo
+
+Server says: wow
+
+Server says: is ngrok free?
+
+Server says: 💩💩
+
+Server says: amazing!
+
+Server says: great 
+
+Server says: hello
+
+Server says: yoooo
+
+Server says: sailor
+
+Server says: hellhthis is awesomewow
+
+Server says: I'm calling about woow
+
+Server says: grgreat
+
+Server says: NICE
+
+Server says: Timothy is heTimothTimothy is here!
+
+Server says: welcome to the blip
+
+Server says: this is taylor
+
+Server says: ㌥
+
+Server says: 
+
+Server says: hello?
+
+Server says: WOW so cool
+
+Server says: welcomecrash
+
+Server says: wwowwow
+
+Server says: awesomeaawesome
+
+Server says: heyyy
+
+Server says: nyaaa eh
+
+client is disconnected from the server.

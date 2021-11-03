@@ -5,14 +5,6 @@ const server = net.createServer(); // factory function
 
 const connectClients = [];
 
-const broadcast = function(message, from){
-  for (let destination of connectClients){
-    if (destination !== from) {
-      destination.write(message);
-    }
-  }
-};
-
 server.on('connection', function(client){
 
   console.log('a new client has connected');
@@ -22,7 +14,7 @@ server.on('connection', function(client){
 
   client.on('data', function (message){
     console.log(`Message received from client: ${message}`);
-    broadcast(message,client);
+    broadcast(message);
   });
 
 });
