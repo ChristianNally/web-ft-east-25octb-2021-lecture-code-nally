@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 app.get("/objectives/:id", (req, res) => {
   dbFns.getObjectiveById(req.params.id, (rows) => {
     const templateVars = { rowarray: rows };
-    res.render("detail", templateVars);
+    res.render("home", templateVars);
   });
 });
 

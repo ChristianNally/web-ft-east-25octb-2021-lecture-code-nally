@@ -1,12 +1,20 @@
 require("dotenv").config();
 const pg = require("pg");
 
+// const config = {
+//   user: process.env.DB_USER,
+//   host: process.env.DB_HOST,
+//   database: process.env.DB_NAME,
+//   password: process.env.DB_PASS,
+//   port: process.env.DB_PORT,
+// };
+
 const config = {
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASS,
-  port: process.env.DB_PORT,
+  user: "postgres",
+  host: 'localhost',
+  database: 'spot',
+  password: 'postgres',
+  port: 5433
 };
 
 const client = new pg.Client(config);
@@ -29,16 +37,7 @@ const getAllObjectives = (cb) => {
     });
 };
 
-const getObjectiveById = (id,cb) => {
-  client
-    .query(`SELECT * FROM objectives WHERE id = $1;`,[id])
-    .then((response) => {
-      cb(response.rows);
-    })
-    .catch((err) => {
-      console.log("db getObjectiveById error:", err);
-    });
-};
+const getObjectiveById = (cb) => {};
 
 module.exports = {
   getAllObjectives,

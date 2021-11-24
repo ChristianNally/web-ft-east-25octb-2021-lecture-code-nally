@@ -65,8 +65,6 @@ switch (verb) {
 
     case 'hack':
       const newquestion = process.argv[3];
-
-//      UPDATE objectives SET question = WTF?; DROP TABLE objectives; SELECT * FROM objectives WHERE id = 80;
       client.query(`UPDATE objectives SET question = $1 WHERE id = 80;`, [newquestion])
         .then((response) => {
           console.log("response.rows",response.rows);

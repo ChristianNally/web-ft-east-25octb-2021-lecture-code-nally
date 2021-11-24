@@ -10,7 +10,7 @@
     <table>
     <tbody>
         <% rowarray.forEach( (item)=>{     %>
-            <tr><td><%= item.id %></td><td><a href="/objectives/<%= item.id %>"><%= item.question %></a></td></tr>
+            <tr><td><%= item.id %></td><td><%= item.question %></td></tr>
                 <% } ); %>            
     </tbody>        
     </table>

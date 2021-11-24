@@ -9,11 +9,12 @@
     <h1>Home</h1>
     <table>
     <tbody>
-        <% rowarray.forEach( (item)=>{     %>
-            <tr><td><%= item.id %></td><td><a href="/objectives/<%= item.id %>"><%= item.question %></a></td></tr>
-                <% } ); %>            
+
     </tbody>        
     </table>
     <!-- <% rowarray.map((row)=>{console.log(row);}); %> -->
+    <% rowarray.forEach( (item)=>{     %>
+<tr><td><%= item.id %></td><td><%= item.question %></td></tr>
+    <% } ); %>
 </body>
 </html>

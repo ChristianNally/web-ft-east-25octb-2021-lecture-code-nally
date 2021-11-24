@@ -37,43 +37,36 @@ const verb = process.argv[2];
 // Add
 // Delete
 
-let id;
+// let id;
 
 switch (verb) {
   case 'browse':
     console.log('Running the browse verb');
-    client.query('SELECT id,day_id,question FROM objectives ORDER BY day_id;')
+    client.query('SELECT id,question FROM objectives ORDER BY day_id;')
       .then((response) => {
         // console.log('response',response);
 //        console.log('response.rows',response.rows);
         for (objective of response.rows){
-          console.log(`ID: ${objective.id} :: DAY_ID: ${objective.day_id} :: ${objective.question}`);
+          console.log(`ID: ${objective.id} :: ${objective.question}`);
         }
         client.end();
       });
     break;
 
-  case 'read':
-    id = process.argv[3];
-    client.query('SELECT * FROM objectives WHERE id = $1;', [id])
-      .then((response) => {
-        console.log("response.rows",response.rows);
-        client.end();
-      });
+//   case 'read':
+//     id = process.argv[3];
+//   //  const query = 'SELECT * FROM objectives WHERE id = ' + id + ';'
+//   //  console.log("Query:",query);
+//   // //  client.query(query)
+//       client.query('SELECT * FROM objectives WHERE id = $1;', [id])
+//       .then((response) => {
+//         console.log(response.rows);
+//         client.end();
+//       });
 
-    break;
 
-    case 'hack':
-      const newquestion = process.argv[3];
 
-//      UPDATE objectives SET question = WTF?; DROP TABLE objectives; SELECT * FROM objectives WHERE id = 80;
-      client.query(`UPDATE objectives SET question = $1 WHERE id = 80;`, [newquestion])
-        .then((response) => {
-          console.log("response.rows",response.rows);
-          client.end();
-        });
-  
-      break;  
+//       break;
 
 //   case 'edit':
 //     id = process.argv[3];

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Detail Page</h1>
+    <% rowarray.forEach( (item)=>{     %>
+        <div><div><%= item.id %></div><div><a href="/objectives/<%= item.id %>"><%= item.question %></a></div></div>
+          <% } ); %>            
+    <!-- <% rowarray.map((row)=>{console.log(row);}); %> -->
+</body>
+</html>

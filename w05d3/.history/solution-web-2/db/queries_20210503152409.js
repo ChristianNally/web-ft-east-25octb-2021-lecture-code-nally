@@ -29,16 +29,7 @@ const getAllObjectives = (cb) => {
     });
 };
 
-const getObjectiveById = (id,cb) => {
-  client
-    .query(`SELECT * FROM objectives WHERE id = $1;`,[id])
-    .then((response) => {
-      cb(response.rows);
-    })
-    .catch((err) => {
-      console.log("db getObjectiveById error:", err);
-    });
-};
+const getObjectiveById = (cb) => {};
 
 module.exports = {
   getAllObjectives,

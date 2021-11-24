@@ -11,13 +11,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/objectives/:id", (req, res) => {
-  dbFns.getObjectiveById(req.params.id, (rows) => {
-    const templateVars = { rowarray: rows };
-    res.render("detail", templateVars);
-  });
-});
-
 const port = process.env.PORT || 7888;
 app.listen(port, () => {
   console.log(`Server is listening on port=${port}`);
